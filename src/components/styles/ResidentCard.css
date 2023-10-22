@@ -1,0 +1,82 @@
+ .resident {
+    background-color: var(--bg-card);
+    color: white;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 0.8em;
+    overflow: hidden;
+    transition: transform 200ms ease;
+ }
+ .resident:hover {
+   transform: scale(1.05);
+ }
+
+ .resident__header {
+    position: relative;
+ }
+
+ .resident__image {
+    width: 100%;
+ }
+
+ .resident__status {
+    width: max-content;
+    background-color: var(--bg-card);
+    position: absolute;
+    left: 0;
+    top: 1.5em;
+    padding: 0.3em;
+    padding-left: 0.5em;
+    padding-right: 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    border-radius: 0 0.5em 0.5em 0 ;
+ }
+
+ .resident__status-circle {
+    width: 1em;
+    aspect-ratio: 1;
+    background: #aaa;
+    border-radius: 50%;
+ }
+ .Alive {
+    background-color: var(--color-green);
+ }
+
+ .Dead {
+    background-color: rgb(205, 12 ,12);
+ }
+
+ .resident__body {
+    padding: 1em 0.8em 2em;
+ }
+
+ .resident__name {
+    color: var(--color-green);
+    text-align: center;
+
+ }
+
+ .resident__line {
+    margin-top: 0.6em;
+    margin-bottom: 1em;
+    border-color: #aaa3;
+ }
+ .resident__list {
+    display: grid;
+    gap: 0.8em;
+ }
+ .resident__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+ }
+
+ .resident__label {
+    color: #aaa;
+    font-weight: 300;
+ }
+ .resident__item-value {
+    padding-left: 1em;
+ }
